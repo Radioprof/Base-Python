@@ -10,4 +10,4 @@ for num in range(1, 1001):
             c //= 10
         if sum_dig % 7 == 0:
             sum_3 += cube
-print(sum_3)
+print(f"Искомая сумма элементов последовательности - {sum_3}")
