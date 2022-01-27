@@ -3,7 +3,7 @@ def thesaurus(*args):
     for name in sorted(args):
         key = name[0]
         if notebook.get(key) is None:
-            notebook.update({key:[name]})
+            notebook.update({key: [name]})
         else:
             notebook[key] += [name]
     print(notebook)

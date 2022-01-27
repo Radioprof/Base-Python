@@ -13,12 +13,13 @@ def get_jokes(numb, not_rep=True):
     nouns = ["автомобиль", "лес", "огонь", "город", "дом"]
     adverbs = ["сегодня", "вчера", "завтра", "позавчера", "ночью"]
     adjectives = ["веселый", "яркий", "зеленый", "утопичный", "мягкий"]
-    if not_rep and len(min(nouns,adverbs, adjectives)) < numb:
-        numb = len(min(nouns,adverbs, adjectives))
+    if not_rep and len(min(nouns, adverbs, adjectives)) < numb:
+        numb = len(min(nouns, adverbs, adjectives))
     for i in range(numb):
         if not_rep:
             print(f'{nouns.pop(randrange(len(nouns)))} {adverbs.pop(randrange(len(adverbs)))} {adjectives.pop(randrange(len(adjectives)))}')
         else:
             print(f'{choice(nouns)} {choice(adverbs)} {choice(adjectives)}')
+
 
 get_jokes(10)

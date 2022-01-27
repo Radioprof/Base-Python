@@ -1,4 +1,4 @@
-def thesaurus_adv (*args):
+def thesaurus_adv(*args):
     notebook = {}
     _y = []
     _z = {}
@@ -15,8 +15,7 @@ def thesaurus_adv (*args):
             notebook[key_1][key_2] += [w]
         else:
             notebook[key_1][key_2] = [w]
-    return (notebook)
+    return notebook
 
 
 print(thesaurus_adv("Иван Сергеев", "Инна Серова", "Петр Алексеев", "Илья Иванов", "Анна Савельева"))
-# print(f'thesaurus_adv("Иван Сергеев", "Инна Серова", "Петр Алексеев", "Илья Иванов", "Анна Савельева"')
