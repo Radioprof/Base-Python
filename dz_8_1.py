@@ -1,6 +1,8 @@
 import re
 
 e_mailstr = re.compile(r'([a-z0-9_-]+)(@)([a-z0-9_\.-]+\.[a-z]{,4})', re.IGNORECASE)
+
+
 def email_parse(addr):
     b = {}
     if e_mailstr.match(addr):
